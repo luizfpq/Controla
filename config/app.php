@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Coruja Anti-Theft'),
+    'name' => env('APP_NAME', 'Controla'),
 
     /*
     |--------------------------------------------------------------------------
