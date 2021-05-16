@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 Aracne/public/
+web: vendor/bin/heroku-php-apache2 public/
