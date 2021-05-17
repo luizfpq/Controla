@@ -1,1 +1,1 @@
-<img src="img/app-icon.png" alt="Projeto Controla">
+    <img src="img/app-icon.png" alt="Projeto Controla">
