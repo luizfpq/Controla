@@ -1,4 +1,4 @@
-<img src="public/img/app-icon.png" alt="Projeto Controla" width="100px" align="right">
+<img src="https://img.icons8.com/color/64/000000/button--v1.png" alt="Projeto Controla" width="100px" align="right">
 
 # Controla
 
