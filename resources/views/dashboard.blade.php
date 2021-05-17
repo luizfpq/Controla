@@ -41,7 +41,7 @@
 
 
             document.getElementById('date_message').innerHTML =
-                wd  + dd + "/" + mm + "/" + yy + " - " + h + ":" + m + ":" + s;
+              "&nbsp;&nbsp;&nbsp;" + wd  + dd + "/" + mm + "/" + yy + " - " + h + ":" + m + ":" + s;
             var t = setTimeout(startTime, 1000);
         }
 
