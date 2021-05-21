@@ -29,7 +29,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/profile', [ProfileController::class], 'update')
         ->name('profile.update');
 
-    
+
+    /* Routes from clients */
+    require __DIR__.'/client.php';
 });
 
 
