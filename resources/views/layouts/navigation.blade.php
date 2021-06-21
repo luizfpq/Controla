@@ -68,7 +68,7 @@
                             {{ __('Clientes') }}
                         </x-dropdown-link>
                         <span></span>
-                        <x-dropdown-link :href="route('profile')">
+                        <x-dropdown-link :href="route('product.list')">
                             {{ __('Produtos') }}
                         </x-dropdown-link>
                         <x-dropdown-link :href="route('supplier.list')">
@@ -119,7 +119,7 @@
                 <x-responsive-nav-link :href="route('client.list')">
                     {{ __('Clientes') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link :href="route('profile')">
+                <x-responsive-nav-link :href="route('product.list')">
                     {{ __('Produtos') }}
                 </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('supplier.list')">
