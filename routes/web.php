@@ -32,6 +32,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     /* Routes from clients */
     require __DIR__.'/client.php';
+    /* Routes from suppliers */
+    require __DIR__.'/supplier.php';
 });
 
 

@@ -71,8 +71,8 @@
                         <x-dropdown-link :href="route('profile')">
                             {{ __('Produtos') }}
                         </x-dropdown-link>
-                        <x-dropdown-link :href="route('profile')">
-                            {{ __('Usuários') }}
+                        <x-dropdown-link :href="route('supplier.list')">
+                            {{ __('Fornecedores') }}
                         </x-dropdown-link>
                     </x-slot>
                 </x-dropdown>
@@ -122,8 +122,8 @@
                 <x-responsive-nav-link :href="route('profile')">
                     {{ __('Produtos') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link :href="route('profile')">
-                    {{ __('Usuários') }}
+                <x-responsive-nav-link :href="route('supplier.list')">
+                    {{ __('Fornecedores') }}
                 </x-responsive-nav-link>
 
             </div>
