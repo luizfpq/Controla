@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Editar cliente') }}
+            {{ __('Editar produto') }}
         </h2>
     </x-slot>
 
@@ -13,10 +13,10 @@
                     <div class="py-12">
                         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-                        <form method="POST" action="{{ route('client.update', $client->id) }}">
+                        <form method="POST" action="{{ route('product.update', $product->id) }}">
                         @csrf
                         <input type="hidden" name="_method" value="put">
-                        @include('client._form')
+                        @include('product._form')
 
                         </form>
 
