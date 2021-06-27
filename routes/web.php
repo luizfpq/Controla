@@ -38,6 +38,8 @@ Route::group(['middleware' => 'auth'], function () {
     require __DIR__.'/product.php';
     /* Routes from stock */
     require __DIR__.'/stock.php';
+    /* Routes from Sells */
+    require __DIR__.'/sell.php';
 });
 
 
