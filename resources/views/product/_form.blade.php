@@ -1,3 +1,4 @@
+
 @php
 
     use App\Http\Controllers\SuppliersController;
@@ -6,6 +7,7 @@
     $select = isset($product->id_supplier) ? $product->id_supplier : null;
 
 @endphp
+
 <!-- Name -->
 <div>
     <x-label for="name" :value="__('Nome')" />
