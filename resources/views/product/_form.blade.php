@@ -1,4 +1,13 @@
 
+@php
+
+    use App\Http\Controllers\SuppliersController;
+    $suppliers = SuppliersController::list_suppliers();
+
+    $select = isset($product->id_supplier) ? $product->id_supplier : null;
+
+@endphp
+
 <!-- Name -->
 <div>
     <x-label for="name" :value="__('Nome')" />
@@ -30,9 +39,31 @@
 
 <!-- id_supplier -->
 <div class="mt-4">
-    <x-label for="id_supplier" :value="__('Fornecedor')" />
 
-    <x-input id="id_supplier" class="block mt-1 w-full" type="text" name="id_supplier" value="{{ $product->id_supplier ?? '' }}" required />
+        <x-label for="id_supplier" :value="__('Fornecedor')"/>
+        @if($select)
+            <select name='id_supplier' placeholder='Fornecedor' class='block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50' required autofocus>
+                @foreach($suppliers as $supplier => $id)
+                    @if($select == $id)
+                        <option value="{{ $id  }}" selected>{{ $supplier }}</option>
+                    @endif
+                @endforeach
+            </select>
+        @else
+            <select name='id_suplier' placeholder='Fornecedor' class='block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50' required autofocus>
+                <option></option>
+
+                @foreach($suppliers as $supplier => $id)
+                    @if($select == $id)
+                        <option value="{{ $id  }}" selected>{{ $supplier }}</option>
+                    @else
+                        <option value="{{ $id  }}">{{ $supplier }}</option>
+                    @endif
+                @endforeach
+            </select>
+        @endif
+
+
 </div>
 
 <div class="flex items-center justify-end mt-4">
