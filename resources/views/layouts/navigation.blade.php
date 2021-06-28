@@ -80,6 +80,9 @@
                         <x-dropdown-link :href="route('stock.list')">
                             {{ __('Estoque') }}
                         </x-dropdown-link>
+                        <x-dropdown-link :href="route('register')">
+                            {{ __('Usuários') }}
+                        </x-dropdown-link>
                     </x-slot>
                 </x-dropdown>
             </div>
