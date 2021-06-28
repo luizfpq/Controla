@@ -32,11 +32,11 @@
                                 <x-table-column>
                                     <x-button class="ml-3 btn-login" onclick="location.href='{{ url('supplier.edit/'. $supplier->id .'/') }}'">
 
-                                        <x-coolicon-edit style="color:#fcfcfc" width="10px"/>
+                                        <x-coolicon-edit width="10px"/>
                                     </x-button>
                                     <x-button class="ml-3 btn-pink" onclick="location.href='{{ url('supplier.delete/'. $supplier->id .'/') }}'">
 
-                                        <x-coolicon-trash-empty style="color:#0f0f0f" width="10px"/>
+                                        <x-coolicon-trash-empty width="10px"/>
                                     </x-button>
                                 </x-table-column>
                             </tr>

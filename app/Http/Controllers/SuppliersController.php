@@ -8,10 +8,18 @@ use Illuminate\Http\Request;
 class SuppliersController extends Controller
 {
     //
-    public function list()
+    public static function list()
     {
         $data = Supplier::all();
         return view('supplier.list', ['suppliers' => $data]);
+    }
+
+    public static function list_suppliers(): array
+    {
+        $data = Supplier::all()->pluck('id', 'name');
+
+        return $data->toArray();
+
     }
 
     public function create(Request $req)

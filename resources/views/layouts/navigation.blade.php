@@ -74,6 +74,9 @@
                         <x-dropdown-link :href="route('supplier.list')">
                             {{ __('Fornecedores') }}
                         </x-dropdown-link>
+                        <x-dropdown-link :href="route('stock.list')">
+                            {{ __('Estoque') }}
+                        </x-dropdown-link>
                     </x-slot>
                 </x-dropdown>
             </div>
@@ -124,6 +127,9 @@
                 </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('supplier.list')">
                     {{ __('Fornecedores') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('stock.list')">
+                    {{ __('Estoque') }}
                 </x-responsive-nav-link>
 
             </div>
